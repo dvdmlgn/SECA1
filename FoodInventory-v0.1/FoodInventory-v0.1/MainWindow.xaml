@@ -4,9 +4,140 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FoodInventory_v0._1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        FontFamily="{StaticResource MaterialDesignFont}"
+        Background="{DynamicResource MaterialDesignPaper}"
+
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="556" Width="314">
+
+
+
+
+
     <Grid>
-        
+
+        <!--<materialDesign:Card Padding="32" Margin="16">
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+        </materialDesign:Card>-->
+
+        <Grid x:Name="GridMenu" VerticalAlignment="Bottom" Background="#E5A41546" Height="50" Panel.ZIndex="1">
+
+            <StackPanel Orientation="Horizontal" >
+                <ListView>
+                    <ListView.ItemsPanel >
+                        <ItemsPanelTemplate >
+                            <WrapPanel Orientation="Horizontal"   VerticalAlignment="Top"></WrapPanel>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+
+                    <ListViewItem>
+                        <StackPanel Orientation="Horizontal" >
+                            <materialDesign:PackIcon x:Name="iconCatalogue" Width="58" Height="30" Kind="ViewList" Foreground="White" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <StackPanel Orientation="Horizontal" >
+                            <materialDesign:PackIcon x:Name="iconRecipes" Width="58" Height="30" Kind="LibraryBooks" Foreground="White" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <StackPanel Orientation="Horizontal" >
+                            <materialDesign:PackIcon x:Name="iconCart" Width="58" Height="30" Kind="Shopping" Foreground="White" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <StackPanel Orientation="Horizontal" >
+                            <materialDesign:PackIcon x:Name="iconSettings" Width="50" Height="30" Kind="Settings" Foreground="White" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    
+                    
+                </ListView>
+            </StackPanel>
+
+        </Grid>
+
+        <Grid x:Name="Inventory">
+            <StackPanel>
+                
+                <ListView x:Name="listViewNavbar" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent" >
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                            </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+
+                    <ListViewItem  Height="60" Foreground="Aqua">
+                        <materialDesign:Card >
+                            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+                        </materialDesign:Card>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+
+        </Grid>
+
+
     </Grid>
 </Window>
