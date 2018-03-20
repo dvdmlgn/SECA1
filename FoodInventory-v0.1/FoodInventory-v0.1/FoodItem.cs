@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace FoodInventory_v0._1
 {
-    class FoodItem
+    public class FoodItem
     {
+        public string Name { get; set; }
+        public string Id { get; set; }
+
+        public double Quantity { get; set; }
+        public string QuantityType { get; set; }
+
+        public DateTime Expiry { get; set; }
+        public string ExpriyType { get; set; }
+
+        public List<string> Tags = new List<string>();
     }
 }

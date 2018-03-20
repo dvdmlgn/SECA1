@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FoodInventory_v0._1
 {
-    class FoodItemManager
+    public static class FoodItemManager
     {
+        public static List<int> Ids = new List<int>();
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoodInventory_v0._1
 {
-    class FoodItemFactory
+    public static class FoodItemFactory
     {
     }
 }
